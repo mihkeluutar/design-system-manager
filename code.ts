@@ -23,6 +23,9 @@ async function getChildrenStructureRecursively(node: SceneNode): Promise<any> {
     id: node.id,
     type: node.type,
     name: node.name,
+    isRemoved: node.removed,
+    isVisible: node.visible,
+    // inferredVariables: node.inferredVariables, // Probably useful?
     // TODO: Add more properties as needed.
     css: await ("getCSSAsync" in node ? node.getCSSAsync() : Promise.resolve("N/A")),
     // Currently commented out the prototyping part since it's a bit more complex.
@@ -35,8 +38,13 @@ async function getChildrenStructureRecursively(node: SceneNode): Promise<any> {
         : "N/A" // Safe check for navigation targets
     })),
     */
+    inferredAutoLayout: null as InferredAutoLayoutResult | null,
     children: [] as any[], // To hold children recursively - can be an empty list.
   };
+
+  if (node.type === "FRAME") {
+    nodeData.inferredAutoLayout = node.inferredAutoLayout || null;
+  }
 
   // If the node has children, recursively fetch their structure
   if ("children" in node && node.children.length > 0) {
