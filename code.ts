@@ -1,9 +1,6 @@
 // TODO: Make resizeable
 figma.showUI(__html__, { width: 400, height: 600 });
 
-// -----------------------------------------------------------------------------
-// Utility functions previously in utils.ts
-// -----------------------------------------------------------------------------
 /**
  * Fetch the top-level nodes from the current page, then filter for COMPONENT_SET nodes.
  */

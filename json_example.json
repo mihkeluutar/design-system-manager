@@ -1,0 +1,2477 @@
+{
+    "id": "80:1524",
+    "type": "COMPONENT_SET",
+    "name": "Button",
+    "description": "",
+    "defaultVariant": {
+      "id": "80:1520"
+    },
+    "isAsset": false,
+    "isRemote": false,
+    "isRemoved": false,
+    "isVisible": true,
+    "publishStatus": "UNPUBLISHED",
+    "componentProperties": {
+      "Label#80:4": {
+        "type": "TEXT",
+        "defaultValue": "Label"
+      },
+      "Trailing Icon#80:2": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Leading Icon#80:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Secondary",
+          "Outline"
+        ]
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Medium",
+        "variantOptions": [
+          "Medium",
+          "Small"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Disabled"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "80:1520",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Medium, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Button-Primary-Background-Default, #3B82F6)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "80:1526",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I80:1526;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1713",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "80:1523",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "80:1521",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I80:1521;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1727",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Medium, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Button-Primary-Background-Hover, #2563EB)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1728",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1728;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1729",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1730",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1731",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1731;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1735",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Medium, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Color-Neutral-200, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1736",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1736;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1737",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1738",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1739",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1739;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1743",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Medium, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Button-Secondary-Background-Default, #F5F5F5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1744",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1744;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1745",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1746",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1747",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1747;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1748",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Medium, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Button-Secondary-Background-Hover, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1749",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1749;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1750",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1751",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1752",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1752;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1753",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Medium, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "background": "var(--Color-Neutral-100, #F5F5F5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1754",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1754;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1755",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1756",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Color-Neutral-300, #D4D4D4)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1757",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1757;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1765",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Medium, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Subtle, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1766",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1766;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1767",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1768",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1769",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1769;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1770",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Medium, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Primary, #D4D4D4)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1771",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1771;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1772",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1773",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1774",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1774;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1775",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Medium, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "48px",
+          "padding": "0px 12px",
+          "align-items": "center",
+          "gap": "2px",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Subtle, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1776",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1776;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1777",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1778",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Color-Neutral-300, #D4D4D4)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1779",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1779;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1800",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Small, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Button-Primary-Background-Default, #3B82F6)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1801",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1801;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1802",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1803",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1804",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1804;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1805",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Small, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Button-Primary-Background-Hover, #2563EB)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1806",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1806;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1807",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1808",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1809",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1809;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1810",
+        "type": "COMPONENT",
+        "name": "Style=Primary, Size=Small, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Color-Neutral-200, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1811",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1811;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1812",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1813",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-White, #FAFAFA)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1814",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1814;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-White, #FAFAFA)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1815",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Small, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Button-Secondary-Background-Default, #F5F5F5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1816",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1816;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1817",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1818",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1819",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1819;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1820",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Small, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Button-Secondary-Background-Hover, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1821",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1821;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1822",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1823",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1824",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1824;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1825",
+        "type": "COMPONENT",
+        "name": "Style=Secondary, Size=Small, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "background": "var(--Color-Neutral-100, #F5F5F5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1826",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1826;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1827",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1828",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Color-Neutral-300, #D4D4D4)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1829",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1829;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1830",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Small, State=Default",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Subtle, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1831",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1831;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1832",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1833",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1834",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1834;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1835",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Small, State=Hover",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Primary, #D4D4D4)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1836",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1836;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1837",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1838",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Text-Secondary, #525252)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1839",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1839;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Text-Secondary, #525252)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "114:1840",
+        "type": "COMPONENT",
+        "name": "Style=Outline, Size=Small, State=Disabled",
+        "isRemoved": false,
+        "isVisible": true,
+        "css": {
+          "display": "inline-flex",
+          "min-height": "36px",
+          "padding": "0px 8px",
+          "align-items": "center",
+          "border-radius": "4px",
+          "border": "1px solid var(--Border-Subtle, #E5E5E5)"
+        },
+        "inferredAutoLayout": null,
+        "children": [
+          {
+            "id": "114:1841",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1841;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1842",
+            "type": "FRAME",
+            "name": "Frame 27",
+            "isRemoved": false,
+            "isVisible": true,
+            "css": {
+              "display": "flex",
+              "padding": "0px 6px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": {
+              "layoutMode": "HORIZONTAL",
+              "paddingLeft": 6,
+              "paddingRight": 6,
+              "paddingTop": 0,
+              "paddingBottom": 0,
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "layoutAlign": "INHERIT",
+              "layoutGrow": 0,
+              "itemSpacing": 0,
+              "layoutPositioning": "AUTO"
+            },
+            "children": [
+              {
+                "id": "114:1843",
+                "type": "TEXT",
+                "name": "Label",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "color": "var(--Color-Neutral-300, #D4D4D4)",
+                  "font-family": "var(--Text-Style-Body-Medium-Font, Inter)",
+                  "font-size": "var(--Text-Style-Body-Medium-Size, 16px)",
+                  "font-style": "normal",
+                  "font-weight": "600",
+                  "line-height": "var(--Text-Style-Body-Medium-Line-height, 22px) /* 137.5% */",
+                  "letter-spacing": "var(--Text-Style-Body-Medium-Tracking, 0px)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "114:1844",
+            "type": "INSTANCE",
+            "name": "Add",
+            "isRemoved": false,
+            "isVisible": false,
+            "css": {
+              "display": "flex",
+              "width": "var(--Icon-Bounding-box-size-M, 20px)",
+              "height": "var(--Icon-Bounding-box-size-M, 20px)",
+              "padding": "4px",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "inferredAutoLayout": null,
+            "children": [
+              {
+                "id": "I114:1844;86:1354",
+                "type": "VECTOR",
+                "name": "Vector",
+                "isRemoved": false,
+                "isVisible": true,
+                "css": {
+                  "width": "12px",
+                  "height": "12px",
+                  "flex-shrink": "0",
+                  "stroke-width": "2px",
+                  "stroke": "var(--Color-Neutral-300, #D4D4D4)"
+                },
+                "inferredAutoLayout": null,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
