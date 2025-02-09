@@ -15,6 +15,41 @@ async function getAllComponentSets(): Promise<ComponentSetNode[]> {
 }
 
 /**
+ * Feteches the children structure recursively. 
+ */
+async function getChildrenStructureRecursively(node: SceneNode): Promise<any> {
+  // Base structure for the current node
+  const nodeData = {
+    id: node.id,
+    type: node.type,
+    name: node.name,
+    // TODO: Add more properties as needed.
+    css: await ("getCSSAsync" in node ? node.getCSSAsync() : Promise.resolve("N/A")),
+    // Currently commented out the prototyping part since it's a bit more complex.
+    /*
+    reactions: child.reactions.map(reaction => ({
+      trigger: reaction.trigger?.type || "UNKNOWN_TRIGGER", // Safe check for trigger
+      action: reaction.action ? reaction.action.type : "NO_ACTION", // Safe check for action
+      destination: reaction.action && "destinationId" in reaction.action
+        ? reaction.action.destinationId
+        : "N/A" // Safe check for navigation targets
+    })),
+    */
+    children: [] as any[], // To hold children recursively - can be an empty list.
+  };
+
+  // If the node has children, recursively fetch their structure
+  if ("children" in node && node.children.length > 0) {
+    nodeData.children = await Promise.all(
+      node.children.map((child) => getChildrenStructureRecursively(child))
+    );
+  }
+
+  return nodeData;
+}
+
+
+/**
  * Given a node ID, fetch the node async, confirm it's a ComponentSetNode,
  * then gather the relevant properties.
  */
@@ -26,48 +61,40 @@ async function getComponentSetData(nodeId: string) {
 
   // Retrieve component set data
   // const css = await node.getCSSAsync(); // Component set does not have css itself
-  const isAsset = node.isAsset;
-  const stringRepresentation = node.toString();
   const id = node.id;
+  const type = node.type;
   const name = node.name;
   const description = node.description;
-
-  // Get component property definitions (these are the same for all children)
+  const defaultVariant = node.defaultVariant;
+  const isAsset = node.isAsset;
+  const isRemote = node.remote;
+  const isRemoved = node.removed;
+  const isVisible = node.visible;
+  const publishStatus = await node.getPublishStatusAsync();
   const componentProperties = node.componentPropertyDefinitions;
 
   // Retrieve all child components (variants)
   const componentVariants = node.children.filter(child => child.type === 'COMPONENT') as ComponentNode[];
 
+  // For logging
   console.log(componentVariants);
 
-  // Fetch CSS asynchronously for all variants
   const variants = await Promise.all(
-    componentVariants.map(async (child) => ({
-      id: child.id,
-      name: child.name,
-      string: child.toString(),
-      css: await child.getCSSAsync(), // Now properly awaited
-      // Currently skipping the reactions part, as it's a bit too complex.
-      /*
-      reactions: child.reactions.map(reaction => ({
-        trigger: reaction.trigger?.type || "UNKNOWN_TRIGGER", // Safe check for trigger
-        action: reaction.action ? reaction.action.type : "NO_ACTION", // Safe check for action
-        destination: reaction.action && "destinationId" in reaction.action
-          ? reaction.action.destinationId
-          : "N/A" // Safe check for navigation targets
-      })),
-      */
-      // TODO: Those things might have children as well, so we should go through them recursively
-    }))
+    componentVariants.map(async (component) => getChildrenStructureRecursively(component))
   );
 
   return {
     id,
+    type,
     name,
     description,
-    componentProperties,
+    defaultVariant,
     isAsset,
-    stringRepresentation,
+    isRemote,
+    isRemoved,
+    isVisible,
+    publishStatus,
+    componentProperties,
     variants // List of all component variants inside this set
   };
 }
